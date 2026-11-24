@@ -1,0 +1,55 @@
+{
+  "name": "textkit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TypeScript 文本算法工具库：Trie 前缀树、敏感词过滤、Levenshtein 编辑距离、KMP 字符串匹配、中文数字转换、文本相似度、命名格式转换等实用算法",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:watch": "node --experimental-strip-types --test --watch tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist coverage"
+  },
+  "keywords": [
+    "text",
+    "algorithm",
+    "trie",
+    "levenshtein",
+    "kmp",
+    "chinese-number",
+    "sensitive-word",
+    "similarity",
+    "typescript",
+    "utilities",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "author": "textkit contributors <textkit@opensource.dev>",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/textkit/textkit.git"
+  },
+  "bugs": {
+    "url": "https://gitee.com/textkit/textkit/issues"
+  },
+  "homepage": "https://gitee.com/textkit/textkit#readme",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
